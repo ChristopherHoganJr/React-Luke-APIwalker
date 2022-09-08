@@ -10,7 +10,8 @@ const Form = (props) => {
       <label>Search for:</label>
       <select
         value={props.type}
-        onChange={(e) => props.selectType(e.target.value)}>
+        onChange={(e) => props.selectType(e.target.value)}
+      >
         {searchTypes.map((searchType, idx) => (
           <option key={idx} value={searchType}>
             {searchType}
@@ -19,7 +20,7 @@ const Form = (props) => {
       </select>
       <label>ID:</label>
       <input
-        type='number'
+        type="number"
         value={props.itemId}
         onChange={(e) => props.idSelect(e.target.value)}
       />

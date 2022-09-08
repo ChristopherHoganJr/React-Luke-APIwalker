@@ -1,9 +1,6 @@
 import React from "react";
-import { useParams } from "react-router";
 
-const Planets = ({ current, setItemId }) => {
-  const { id } = useParams();
-  setItemId(id);
+const Planets = ({ current }) => {
   return (
     <div>
       <h2>{current.name}</h2>

@@ -1,7 +1,6 @@
 import React from "react";
 
 const People = ({ current }) => {
-  console.log(current);
   return (
     <div>
       <h2>{current.name}</h2>
